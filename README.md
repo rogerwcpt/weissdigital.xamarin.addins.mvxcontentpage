@@ -1,6 +1,5 @@
 # weissdigital.xamarin.addins.mvxcontentpage
 Creates a Forms MVVMCross MvxContentPage with a CodeBehind class that extends MvxViewModel.
-Creates a Forms MvxContentPage with a CodeBehind class.
 
 ![Add File Dialog](screenshot.png)
 
