@@ -55,9 +55,9 @@ using MvvmCross.ViewModels;
             
 namespace ${Namespace}.ViewModels
 {
-    public partial class ${Name} : MvxViewModel
+    public partial class ${Name}Model : MvxViewModel
     {
-        public ${Name} ()
+        public ${Name}Model ()
         {
         }                
     }
