@@ -4,9 +4,6 @@ Creates a Forms MvxContentPage with a CodeBehind class.
 
 ![Add File Dialog](screenshot.png)
 
-## Download AddIn
-![Download](https://github.com/rogerwcpt/weissdigital.xamarin.addins.mvxcontentpage/releases/download/1.0/WeissDigital.Xamarin.Addins.MvxContentPage_1.0.mpack)
-
 ### The files that are created are as follows:
 
 ##### Xaml File:
@@ -61,4 +58,6 @@ Nuget Packages Required in your Core Project:
 - [Xamarin.Forms](https://www.nuget.org/packages/Xamarin.Forms)
 - [MvvmCross](https://www.nuget.org/packages/MvvmCross)
 - [MvvmCross.Forms](https://www.nuget.org/packages/MvvmCross.Forms)
-- 
+
+## Download AddIn
+![WeissDigital.Xamarin.Addins.MvxContentPage_1.0.mpack](https://github.com/rogerwcpt/weissdigital.xamarin.addins.mvxcontentpage/releases/download/1.0/WeissDigital.Xamarin.Addins.MvxContentPage_1.0.mpack)
