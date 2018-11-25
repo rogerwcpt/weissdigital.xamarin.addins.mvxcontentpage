@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+    <Runtime>
+        <Import file="Templates/MvxContentPageTemplate.xft.xml" />
+    </Runtime>
+    
+    <Extension path = "/MonoDevelop/Ide/FileTemplates">
+        <FileTemplate id="MvxContentPage-Empty" file="Templates/MvxContentPageTemplate.xft.xml"/>    
+    </Extension>
+</ExtensionModel>

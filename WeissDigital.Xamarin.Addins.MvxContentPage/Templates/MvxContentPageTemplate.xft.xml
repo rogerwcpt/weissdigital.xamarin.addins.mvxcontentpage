@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Template
+    originator="Roger Weiss"
+    language="C#"
+    created="2018/11/25"
+    lastModified="2018/11/25">
+    
+    <TemplateConfiguration>
+        <_Name>Empty MVVMCross MvxContentPage XAML</_Name>
+         <Icon>md-html-file-icon</Icon>
+         <LanguageName>C#</LanguageName>
+        <_Category>Forms</_Category>
+        <_Description>Creates a Forms MVVMCross MvxContentPage with a CodeBehind class. (Use Add | New File Menu and then goto the Forms category)</_Description>
+        <DefaultFilename>PageView</DefaultFilename>
+    </TemplateConfiguration>
+    
+    <TemplateFiles>
+         <File name="${Name}.xaml"
+               DefaultExtension=".xaml"
+               AddStandardHeader="False"
+               BuildAction="EmbeddedResource"
+               CustomTool="MSBuild:UpdateDesignTimeXaml"
+               SubType="Designer"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Mvx:MvxContentPage x:TypeArguments="ViewModels:${Name}Model" 
+             xmlns="http://xamarin.com/schemas/2014/forms"      
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:Mvx="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms" 
+             xmlns:ViewModels="clr-namespace:${Namespace}.ViewModels;assembly=${Namespace}" 
+             x:Class="${Namespace}.${Name}">
+                
+</Mvx:MvxContentPage>
+]]>                
+         </File>   
+         <File name="${Name}.xaml.cs"
+               DependsOn="${Name}.xaml"
+               AddStandardHeader="True">
+<![CDATA[using System;
+using MvvmCross.Forms.Views;
+using ${Namespace}.ViewModels; // Please correct the viewmodel namespace
+namespace ${Namespace}
+{
+    public partial class ${Name} : MvxContentPage<${Name}Model>
+    {
+        public ${Name} ()
+        {
+            InitializeComponent();
+        }                
+    }
+}
+]]>                
+        </File>
+         <File name="${Name}Model.cs"
+               AddStandardHeader="True"><![CDATA[using System;
+using MvvmCross.ViewModels;
+            
+namespace ${Namespace}.ViewModels
+{
+    public partial class ${Name} : MvxViewModel
+    {
+        public ${Name} ()
+        {
+        }                
+    }
+}
+]]>                
+        </File>        
+    </TemplateFiles>    
+</Template>

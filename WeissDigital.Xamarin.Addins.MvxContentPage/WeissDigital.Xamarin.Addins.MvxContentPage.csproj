@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Templates\MvxContentPageTemplate.xft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="AfterBuilding" AfterTargets="Build">
+    <Exec Command="'/Applications/Visual Studio.app/Contents/MacOS/vstool' setup pack WeissDigital.Xamarin.Addins.MvxContentPage.dll" WorkingDirectory="$(TargetDir)" Condition="'$(Configuration)' == 'Release'" />
+  </Target>       
+</Project>
