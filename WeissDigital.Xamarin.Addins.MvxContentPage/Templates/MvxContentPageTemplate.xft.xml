@@ -34,9 +34,9 @@
          <File name="${Name}.xaml.cs"
                DependsOn="${Name}.xaml"
                AddStandardHeader="True">
-<![CDATA[using System;
-using MvvmCross.Forms.Views;
-using ${Namespace}.ViewModels; // Please correct the viewmodel namespace
+<![CDATA[using MvvmCross.Forms.Views;
+using ${Namespace}.ViewModels;
+            
 namespace ${Namespace}
 {
     public partial class ${Name} : MvxContentPage<${Name}Model>
@@ -50,9 +50,8 @@ namespace ${Namespace}
 ]]>                
         </File>
          <File name="${Name}Model.cs"
-               AddStandardHeader="True"><![CDATA[using System;
-using MvvmCross.ViewModels;
-            
+               AddStandardHeader="True"><![CDATA[using MvvmCross.ViewModels;
+               
 namespace ${Namespace}.ViewModels
 {
     public partial class ${Name}Model : MvxViewModel
